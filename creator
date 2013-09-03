@@ -4,8 +4,23 @@ import random
 
 random.seed()
 
-for x in range (0,4):
-    print str(random.randint(1,6)) + '\t' + str(random.randint(1,6)) + '\t' + str(random.randint(1,6)) + '\t' + str(random.randint(1,6)) + '\t' + str(random.randint(1,6)) + '\t' + str(random.randint(1,6))
+S = []
+D = []
+C = []
+I = []
+W = []
+Cha = []
+
+for i in range (0,4):
+    S.append(random.randint(1,6))
+    D.append(random.randint(1,6))
+    C.append(random.randint(1,6))
+    I.append(random.randint(1,6))
+    W.append(random.randint(1,6))
+    Cha.append(random.randint(1,6))
+
+for i in range (0,4):
+    print str(S[i]) + '\t' + str(D[i]) + '\t' + str(C[i]) + '\t' + str(I[i]) + '\t' + str(W[i]) + '\t' + str(Cha[i])
 
 x = random.randint(0,6)
 
@@ -44,3 +59,30 @@ elif x == 7:
     print "Ranger"
 elif x == 8:
     print "Rogue"
+
+x = y = random.randint(0,10)
+while x == y:
+    y = random.randint(0,10)
+
+if x == 0 or y == 0:
+    print "Cultural Lore"
+if x == 1 or y == 1:
+    print "Forbidden Lore"
+if x == 2 or y == 2:
+    print "Hobbyist Lore"
+if x == 3 or y == 3:
+    print "Magical Lore"
+if x == 4 or y == 4:
+    print "Military Lore"
+if x == 5 or y == 5:
+    print "Natural Lore"
+if x == 6 or y == 6:
+    print "Planar Lore"
+if x == 7 or y == 7:
+    print "Political Lore"
+if x == 8 or y == 8:
+    print "Religious Lore"
+if x == 9 or y == 9:
+    print "Subterranean Lore"
+if x == 10 or y == 10:
+    print "Trade Lore"
